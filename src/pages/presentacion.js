@@ -1,4 +1,5 @@
 import * as React from "react"
+import Layout from "../components/layout"
 
 const stylePresentacion = {
     backgroundColor: "hotpink"
@@ -7,7 +8,12 @@ const stylePresentacion = {
 const Presentacion = () =>{
     return(
         <>
-        <h1 style={stylePresentacion}>Soy un crack</h1>
+        <Layout>
+            <h2>Soy un crack</h2>
+            <ul>
+                <li>Deportes</li>
+            </ul>
+        </Layout>
         </>
     )
 }

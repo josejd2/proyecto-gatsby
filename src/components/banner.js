@@ -1,18 +1,19 @@
 import * as React from "react"
 
 const styles = {
-    width: 150,
     borderWidth: 5,
     borderColor: "white",
     borderStyle: "double",
     backgroundColor: "red",
-    textAlign: "center"
+    textAlign: "center",
+    minHeight: 200
 }
 
-const Banner = () =>{
+const Banner = ({texto="No me gusta trabajar", url="tonto"}) =>{
     return(
         <div style={styles}>
-            <p>Soy la publicidad</p>
+            <p>{texto}</p>
+            <p>{url}</p>
         </div>
     )
 }

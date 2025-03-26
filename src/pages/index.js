@@ -1,5 +1,6 @@
 import * as React from "react"
 import Banner from "../components/banner"
+import Layout from "../components/layout"
 
 const pageStyles = {
   backgroundColor: "#000", 
@@ -15,11 +16,22 @@ const info = {
 
 const IndexPage = () => {
   // a partir del return jsx
+  
   return (
-    <main style={pageStyles}> 
-      <h1>{info.text}</h1>
-      <Banner></Banner>
-    </main>
+    <Layout>
+      <main style={pageStyles}> 
+        <h1>{info.text}</h1>
+        <Banner 
+          texto="amor"
+          url="https://www.google.com"
+        ></Banner>
+        <Banner 
+          texto="libertad"
+          url="https://www.mozilla.com"
+        ></Banner>
+        <Banner/>
+      </main>
+    </Layout>
   )
 }
 
